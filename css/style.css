@@ -1,0 +1,62 @@
+
+/* demo 3.8.2021 */
+
+body { font-family: ttlu;}
+#demo {
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.product__inner { display: flex; }
+.product-image { width: 40%; }
+.product-image img {
+    width: 80%;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.disabledButton { background: #369; }
+
+.review-form {
+    border: 1px solid #ddd;
+    padding: 10px;  
+    width: 300px;
+    margin-top: 20px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* practice 4/8/2021 */
+
+.tab {
+    margin: 0px 10px 10px 0px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.activeTab {
+    color: #fff;
+    background: #333;
+}
+
+.product-review {
+    margin-top: 20px;
+}
+
+
+/* 6/8/2021 */
+
+.item-product {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}

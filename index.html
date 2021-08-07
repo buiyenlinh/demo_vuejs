@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study Vue.js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	
+	<div id="demo">
+		<div class="cart">
+			<p>Cart( {{ cart.length }} )</p>
+		</div>
+		<product :premium="premium" @add-to-cart="updateCart"></product>
+	</div>
+
+	<hr>
+
+	<!-- <div id="study">
+		<div class="container">
+			<div class="title">
+				<h3>{{ title }}</h3>
+			</div>
+			<b>Number selected: {{ products.length }}</b>
+			<product @add-product="addProduct"></product>
+
+			<p v-red>This is my directive</p>
+
+			<anchored-heading :level="1">Hello world!</anchored-heading>
+		</div>
+	</div> -->
+
+
+	<script src="vue.js"></script>
+</body>
+</html>
