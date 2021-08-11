@@ -5,14 +5,17 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font.css">
-	<script src="https://unpkg.com/vue@next"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
 
 	<div id="app">
-		<h1>I am trying to learn. Tên: {{ product }}</h1>
-		<p>Tôi vừa được add vào</p>
-		<p>Tôi thêm 1 dòng</p>
+		<div class="container">
+			<div class="cart">
+				<span>Cart ( {{ products.length }} )</span>
+			</div>
+			<comp-product @add-to-cart="addToCart"></comp-product>
+		</div>
 	</div>
 
 	<script src="vue.js"></script>
