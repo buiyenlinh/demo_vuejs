@@ -8,11 +8,30 @@ body { font-family: ttlu;}
 }
 
 .product__inner { display: flex; }
-.product-image { width: 40%; }
-.product-image img {
+.product__image { width: 40%; }
+.product__image img {
     width: 80%;
 }
 
+.add-to-cart {
+    padding: 6px 12px;
+    background: #1778d9;
+    color: #fff;
+}
+
+.disabledClass {
+    background: #ccc;
+}
+
+.cart { 
+    text-align: right; 
+    margin: 25px 0px 10px 0px;
+}
+
+.cart span { 
+    border: 1px solid #ddd;
+    padding: 10px; 
+}
 .color-box {
     width: 50px;
     height: 50px;
@@ -51,12 +70,3 @@ body { font-family: ttlu;}
     margin-top: 20px;
 }
 
-
-/* 6/8/2021 */
-
-.item-product {
-    border: 2px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    cursor: pointer;
-}
