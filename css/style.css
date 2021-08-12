@@ -40,13 +40,18 @@ body { font-family: ttlu;}
 
 .disabledButton { background: #369; }
 
-.review-form {
+.product__review__form {
     border: 1px solid #ddd;
-    padding: 10px;  
+    padding: 20px;  
     width: 300px;
     margin-top: 20px;
 }
-
+.product__review__form p,
+.product__review__form p input,
+.product__review__form p textarea,
+.product__review__form p select {
+    width: 100%;
+}
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -70,3 +75,6 @@ body { font-family: ttlu;}
     margin-top: 20px;
 }
 
+.mt-1 {
+    margin-top: 1em;
+}
