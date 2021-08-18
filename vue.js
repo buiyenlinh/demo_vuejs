@@ -3,6 +3,11 @@ var CompReview = {
 	template: `
 	<div class="product__review">
 		<div class="product__review__form">
+			<ul>
+				<li v-for="error in errors" :key="error">
+					{{ error }}
+				</li>
+			</ul>
 			<form action="" >
 				<p>
 					<label for="name">Name: </label><br>
@@ -31,22 +36,29 @@ var CompReview = {
 		return {
 			name: '',
 			review: '',
-			rating: ''
+			rating: '',
+			errors: []
 		}
 	},
 	computed: {},
 	methods: {
 		addReview() {
-			let review = {
-				name : this.name,
-				review: this.review,
-				rating: this.rating
+			if (this.name || this.review || this.rating) {
+				let review = {
+					name : this.name,
+					review: this.review,
+					rating: this.rating
+				}
+				console.log(review)
+				this.$emit('add-to-review', review);
+				this.name =  '',
+				this.review = '',
+				this.rating = ''
+			} else {
+				if (!this.name) this.errors.push('Required name');
+				if (!this.rating) this.errors.push('Required rating');
+				if (!this.review) this.errors.push('Required review');
 			}
-			console.log(review)
-			this.$emit('add-to-review', review);
-			this.name =  '',
-			this.review = '',
-			this.rating = ''
 		}
 	}
 }
